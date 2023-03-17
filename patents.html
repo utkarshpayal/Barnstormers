@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Patent Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Patent Search</h1>
+    <form>
+      <input type="text" placeholder="Enter a keyword" required>
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <main>
+    <div id="card-container"></div>
+  </main>
+  <script src="script.js"></script>
+  <label for="sort-select">Sort by:</label>
+<select id="sort-select">
+  <option value="relevance">Relevance</option>
+  <option value="publication-date">Publication Date</option>
+  <option value="inventor">Inventor Name</option>
+</select>
+
+<fieldset>
+  <legend>Filter by:</legend>
+  <label for="assignee-checkbox">Assignee:</label>
+  <input type="checkbox" id="assignee-checkbox" name="assignee" value="companyA">
+  <label for="type-radio">Type:</label>
+  <input type="radio" id="type-radio1" name="type" value="utility">
+  <label for="type-radio1">Utility</label>
+  <input type="radio" id="type-radio2" name="type" value="design">
+  <label for="type-radio2">Design</label>
+</fieldset>
+
+<div id="card-container">
+  <!-- cards go here -->
+</div>
+<div id="pagination">
+  <button id="prev-page">Prev</button>
+  <button id="next-page">Next</button>
+</div>
+
+<div class="card">
+  <button class="favorite-button">Save</button>
+  <!-- card content goes here -->
+</div>
+
+
+
+
+
+</body>
+</html>
+
